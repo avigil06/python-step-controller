@@ -22,9 +22,11 @@ motor1 = Motor(17, 18, 27, 22)
 button = Button(15, 17)
 while True:
     if button.is_forward():
-        motor1.forward(100)
+        print("forward")
+        # motor1.forward(100)
     elif button.is_backward():
-        motor1.backward(100)
+        print("backward")
+        # motor1.backward(100)
     else:
         motor1.reset()
     time.sleep(0.5)
