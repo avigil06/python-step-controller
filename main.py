@@ -3,6 +3,7 @@
 # import required libs
 import time
 import RPi.GPIO as GPIO
+from multiprocessing import Process
 from motor import Motor
 from button import Button
 
@@ -24,8 +25,13 @@ button = Button(14, 15)
 while True:
     if button.is_forward():
         print("forward")
-        motor1.forward(10)
-        motor2.forward(10)
+        motor1_process = Process(target=motor1.forward, args=(10))
+        motor2_process = Process(target=motor2.forward, arge=(10))
+        motor1_process.start()
+        motor2_process.start()
+        motor1_process.join()
+        motor2_process.join()
+        print("forward done")
     elif button.is_backward():
         print("backward")
         motor1.backward(10)
