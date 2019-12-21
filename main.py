@@ -16,6 +16,7 @@ GPIO.setmode(GPIO.BCM)
 # StepPins = [17,18,27,22]
 
 motor1 = Motor(17, 18, 27, 22)
+motor2 = Motor(6, 12, 19, 26)
 
 
 # Start main loop
@@ -24,11 +25,14 @@ while True:
     if button.is_forward():
         print("forward")
         motor1.forward(100)
+        motor2.forward(100)
     elif button.is_backward():
         print("backward")
         motor1.backward(100)
+        motor2.backward(100)
     else:
         motor1.reset()
+        motor2.reset()
 
 try:
     print("Started")
@@ -37,4 +41,5 @@ except:
 finally:
     #cleaning up and setting pins to low again (motors can get hot if you wont)
     motor1.reset()
+    motor2.reset()
     GPIO.cleanup()
