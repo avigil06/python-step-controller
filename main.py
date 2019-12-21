@@ -29,7 +29,7 @@ while True:
         motor1.backward(100)
     else:
         motor1.reset()
-    time.sleep(0.5)
+
 try:
     print("Started")
 except:
