@@ -12,8 +12,8 @@ class Button:
 
 
     def is_forward(self):
-        return GPIO.input(self.pins[0])
+        return GPIO.input(self.pins[0]) == False
 
 
     def is_backward(self):
-        return GPIO.input(self.pins[1])
+        return GPIO.input(self.pins[1]) == False
