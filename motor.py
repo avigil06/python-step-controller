@@ -43,7 +43,7 @@ class Motor:
                 if self.sequence[step_counter][pin] != 0:
                     GPIO.output(output_pin, True)
                 else:
-                    GPIO.output(output_pin, False
+                    GPIO.output(output_pin, False)
 
             step_counter += 1
 

@@ -3,8 +3,8 @@
 # import required libs
 import time
 import RPi.GPIO as GPIO
-from .motor import Motor
-from .button import Button
+from motor import Motor
+from button import Button
 
 # Use BCM GPIO references
 # instead of physical pin numbers
