@@ -17,7 +17,7 @@ GPIO.setmode(GPIO.BCM)
 # StepPins = [17,18,27,22]
 
 motor1 = Motor(17, 18, 27, 22)
-motor2 = Motor(6, 13, 19, 26)
+motor2 = Motor(12, 13, 19, 26)
 
 
 # Start main loop
