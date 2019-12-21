@@ -19,7 +19,7 @@ motor1 = Motor(17, 18, 27, 22)
 
 
 # Start main loop
-button = Button(15, 17)
+button = Button(14, 15)
 while True:
     if button.is_forward():
         print("forward")
