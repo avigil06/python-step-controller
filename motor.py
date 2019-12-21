@@ -2,8 +2,6 @@ import time
 import RPi.GPIO as GPIO
 
 class Motor:
-    pins = range(0, 4)
-
     wait_time = 0.0025
 
     sequence = range(0, 8)
@@ -18,6 +16,7 @@ class Motor:
 
 
     def __init__(self, pin1, pin2, pin3, pin4):
+        self.pins = range(0, 4)
         self.pins[0] = pin1
         self.pins[1] = pin2
         self.pins[2] = pin3
