@@ -20,8 +20,7 @@ motor1 = Motor(17, 18, 27, 22)
 
 # Start main loop
 button = Button(15, 17)
-try:
-  while True:
+while True:
     if button.is_forward():
         motor1.forward(100)
     elif button.is_backward():
@@ -29,7 +28,8 @@ try:
     else:
         motor1.reset()
     time.sleep(0.5)
-
+try:
+    print("Started")
 except:
   print("Failed")
 finally:
