@@ -46,7 +46,7 @@ class Motor:
                 step_counter = 0
             
             if step_counter < 0:
-                step_counter = 4
+                step_counter = 3
 
             time.sleep(self.wait_time)
             self.reset()

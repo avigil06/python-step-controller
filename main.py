@@ -3,7 +3,7 @@
 # import required libs
 import time
 import RPi.GPIO as GPIO
-from full_step_motor import Motor
+from motor import Motor
 from button import Button
 
 # Use BCM GPIO references
