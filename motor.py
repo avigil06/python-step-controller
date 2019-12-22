@@ -53,6 +53,7 @@ class Motor:
                 step_counter = 8
 
             time.sleep(self.wait_time)
+            self.reset()
 
 
     def backward(self, steps):
@@ -75,3 +76,4 @@ class Motor:
                 step_counter = 7
 
             time.sleep(self.wait_time)
+            self.reset()
