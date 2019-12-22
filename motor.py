@@ -35,7 +35,7 @@ class Motor:
 
     def forward(self, steps):
         step_counter = 0
-        for step in range(0, steps):
+        for step in range(0, (steps*8)):
             for pin in range(0, 4):
                 output_pin = self.pins[pin]
 
@@ -57,7 +57,7 @@ class Motor:
 
     def backward(self, steps):
         step_counter = 7
-        for step in range(0, steps):
+        for step in range(0, (steps*8)):
             for pin in range(0, 4):
                 output_pin = self.pins[pin]
 

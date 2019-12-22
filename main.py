@@ -24,12 +24,14 @@ button = Button(14, 15)
 while True:
     if button.is_forward():
         print("forward")
-        motor1.forward(8)
-        motor2.forward(8)
+        motor1.forward(128)
+        time.sleep(1)
+        motor2.forward(128)
     elif button.is_backward():
         print("backward")
-        motor1.backward(8)
-        motor2.backward(8)
+        motor1.backward(128)
+        time.sleep(1)
+        motor2.backward(128)
     else:
         motor1.reset()
         motor2.reset()
