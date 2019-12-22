@@ -2,7 +2,7 @@ import time
 import RPi.GPIO as GPIO
 
 class Motor:
-    wait_time = 0.0025
+    wait_time = 0.0013
 
     sequence = range(0, 8)
     sequence[0] = [1,0,0,0]

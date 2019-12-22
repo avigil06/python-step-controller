@@ -19,7 +19,7 @@ GPIO.setmode(GPIO.BCM)
 motor2 = Motor(12, 13, 19, 26)
 
 
-steps_to_rotate = 150
+steps_to_rotate = 10
 # Start main loop
 button = Button(14, 15)
 while True:
